@@ -271,7 +271,7 @@ class BalloonGameView(context: Context) : View(context) {
 
             paint.style = Paint.Style.STROKE
             paint.strokeWidth = 5f
-            paint.strokeCap = Paint.Cap.round
+            paint.strokeCap = Paint.Cap.ROUND
             val smile = RectF(cx - rx * 0.22f, cy - ry * 0.05f, cx + rx * 0.22f, cy + ry * 0.26f)
             canvas.drawArc(smile, 15f, 150f, false, paint)
             paint.style = Paint.Style.FILL
